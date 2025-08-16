@@ -1,0 +1,98 @@
+/* style.css */
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: #190f2a;
+  position: relative;
+}
+
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #0f172a;
+  background-image: 
+    radial-gradient(circle, rgba(139,92,246,0.6) 1px, transparent 1px),
+    radial-gradient(circle, rgba(59,130,246,0.4) 1px, transparent 1px),
+    radial-gradient(circle, rgba(236,72,153,0.5) 1px, transparent 1px);
+  background-size: 20px 20px, 40px 40px, 60px 60px;
+  background-position: 0 0, 10px 10px, 30px 30px;
+}
+
+header, main {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+}
+
+
+
+header{
+    text-align: center;  
+}
+
+.Heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 13);
+    text-align: center;
+    background-color: rgb(188, 200, 200, 0.3);
+    border-radius: 30px;
+    display: inline-block;
+    width: 600px;
+}
+
+.Heading:hover {
+    color: rgb(166, 255, 11);
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-top: 30vh;
+    gap: 2rem;
+    background-color: rgb(188, 200, 200, 0.3);
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.button, #btn{
+    height: auto;
+    width: fit-content;
+    border-radius: 40%;
+    border: none;
+}
+
+#btn:hover{
+    background-color: rgb(152, 144, 152);
+}
+
+.top-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    background-color: rgb(188, 200,200, 0.3);
+    border-radius: 30px;
+}
+
+#fluidCanvas{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 120px;
+    right: 90px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+}
